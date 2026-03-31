@@ -40,13 +40,6 @@ Analiz İlhamı: Airplane Crashes Analysis & EDA - Havacılık güvenliği ve ka
 
 Teknik Altyapı: İnönü Üniversitesi Yapay Zeka Dersi Müfredatı.
 
-🛠️ Kurulum ve Çalıştırma
-Bu repoyu bilgisayarınıza indirin.
-
-Gerekli kütüphaneleri yükleyin: pip install pandas matplotlib seaborn numpy
-
-vize_odevi.ipynb veya .py dosyasını çalıştırın.
-
 Geliştirici: Esma RAYDEMİR
 
 Bölüm: İnönü Üniversitesi - Bilgisayar Programcılığı
