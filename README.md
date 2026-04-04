@@ -1,45 +1,35 @@
-# Yapay_Zeka_Projesi
-🛸 İHA Otonom Uçuş Karar Destek Sistemi (Vize Projesi)
-Bu proje, İnsansız Hava Araçlarının (İHA) güvenli kalkış ve uçuş yapabilmesi için hava durumu, görüş mesafesi ve pist doluluk oranı gibi kritik parametreleri analiz eden bir Yapay Zeka Ön Hazırlık ve EDA (Keşifçi Veri Analizi) çalışmasıdır.
+# 🚀 İHA Otonom Uçuş Onay ve Risk Analiz Sistemi
 
-📝 Proje Konusu
-Otonom sistemlerin havacılıkta güvenli karar verebilmesi için çevresel verileri doğru işlemesi gerekir. Bu çalışma;
+Bu proje, İHA (İnsansız Hava Aracı) ve Drone sistemlerinin kalkış öncesi çevresel faktörleri analiz ederek **"Güvenli Uçuş Onayı"** verip veremeyeceğini denetleyen bir karar destek mekanizmasıdır. 
 
-Hava durumu tiplerinin (Güneşli, Yağmurlu, Karlı vb.) uçuş üzerindeki etkisini,
+Özellikle otonom sistemlerde, sensörlerden gelen verilerin (Hava durumu, görüş mesafesi, pist doluluğu) manuel müdahaleye gerek kalmadan işlenmesi hedeflenmiştir.
 
-Görüş Mesafesi (Visibility) ve Pist Trafiği (Runway Traffic) gibi sensör temelli verilerin simülasyonunu,
+## 📌 Projenin Amacı ve Kapsamı (Vize Dönemi)
+Projenin vize aşamasında, havacılık güvenliğini tehdit eden parametrelerin keşifçi veri analizi (EDA) ve görselleştirmesi yapılmıştır. Sistemin temel çalışma mantığı şu kriterlere dayanır:
+* **Hava Durumu Sınıflandırması:** Yağışlı ve karlı havalarda risk analizi.
+* **Görüş Mesafesi (Visibility):** Sensör bazlı mesafe ölçümü ile iniş/kalkış güvenliği.
+* **Pist Trafiği (Runway Traffic):** Pist üzerindeki engel tespiti otomasyonu.
 
-Veri setindeki eksik/hatalı bilgilerin temizlenmesini ve görselleştirilmesini kapsamaktadır.
+## 📊 Veri Analizi ve Görselleştirme
+Proje kapsamında `Matplotlib` ve `Seaborn` kütüphaneleri kullanılarak simetrik ve estetik veri dağılım grafikleri oluşturulmuştur. Bu grafikler, sistemin hangi koşullarda "Uçuş İptal" kararı verdiğini şeffaf bir şekilde sunmaktadır.
 
-🚀 Kullanılan Teknolojiler
-Dil: Python 3.x
+## 🛠️ Kullanılan Teknolojiler
+* **Dil:** Python 3.x
+* **Platform:** Google Colab / VS Code
+* **Kütüphaneler:** `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`
 
-Platform: Google Colab / VS Code
+## 📚 Kaynakça ve Esinlenme (References)
+Bu projenin geliştirilme sürecinde aşağıdaki bilimsel veriler ve topluluk çalışmalarından yararlanılmıştır:
 
-Kütüphaneler: * Pandas: Veri yönetimi ve analizi.
+1. **Hava Durumu Veri Seti:** [Weather Type Classification - Kaggle](https://www.kaggle.com/datasets/...) (İndirdiğin setin linkini buraya koyabilirsin)
+2. **Kaza Analizi ve Risk Literatürü:** [Airplane Crashes Analysis - EDA](https://www.kaggle.com/code/melissamonfared/airplane-crashes-analysis-eda)
+   * *Bu çalışma, havacılıkta çevresel faktörlerin kaza oranlarına etkisini anlamak için referans alınmıştır.*
+3. **Havacılık Standartları:** Otonom uçuş güvenliği ve pist trafik kontrolü protokolleri üzerine genel incelemeler.
 
-Matplotlib & Seaborn: Profesyonel ve simetrik veri görselleştirme.
+## 💡 Gelecek Planları (Final Dönemi)
+* **Makine Öğrenmesi:** Mevcut verilerle bir `Decision Tree` (Karar Ağacı) modeli eğitilerek gerçek zamanlı tahminleme yapılacak.
+* **Donanım Entegrasyonu:** Su altı ve hava araçları için sensör füzyonu mantığıyla sistem derinleştirilecek.
 
-Numpy: Sayısal veri simülasyonu (Pist trafiği ve Görüş mesafesi için).
-
-📊 Analiz ve Görselleştirme
-Proje kapsamında oluşturulan grafikler şunları hedeflemektedir:
-
-Hava Durumu Dağılımı: Veri setindeki iklim çeşitliliğinin analizi.
-
-Görüş Mesafesi Dağılımı (Box Plot): Hangi hava koşullarının uçuş için "kritik düşük görüş" yarattığının tespiti.
-
-Otonom Karar Mekanizması: Yazılan algoritmanın pist doluluğu ve hava durumuna göre verdiği "Uçuş Onay/İptal" oranları.
-
-📚 Kaynakça ve Esinlenmeler
-Bu proje geliştirilirken aşağıdaki bilimsel çalışmalar ve veri setlerinden yararlanılmıştır:
-
-Veri Seti: Kaggle - Weather Type Classification
-
-Analiz İlhamı: Airplane Crashes Analysis & EDA - Havacılık güvenliği ve kaza risk faktörleri üzerine yapılan bu çalışma, projedeki risk parametrelerinin belirlenmesinde kaynak olarak kullanılmıştır.
-
-Teknik Altyapı: İnönü Üniversitesi Yapay Zeka Dersi Müfredatı.
-
-Geliştirici: Esma RAYDEMİR
-
-Bölüm: İnönü Üniversitesi - Bilgisayar Programcılığı
+---
+**Hazırlayan:** Esma RAYDEMİR
+ 
